@@ -1,0 +1,163 @@
+:root {
+  color-scheme: light;
+  --ink: #202124;
+  --muted: #5f6368;
+  --rule: #d9dce1;
+  --link: #315c88;
+  --page: #fbfbfa;
+  --surface: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--ink);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.65;
+}
+
+a {
+  color: var(--link);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.16em;
+}
+
+a:hover {
+  color: var(--ink);
+}
+
+a:focus-visible {
+  outline: 3px solid #9bb8d4;
+  outline-offset: 3px;
+}
+
+.site-shell {
+  width: min(100% - 2.5rem, 46rem);
+  margin: 0 auto;
+  padding: 5rem 0 4rem;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.site-label {
+  margin: 0 0 0.75rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  letter-spacing: -0.04em;
+}
+
+h2 {
+  margin: 0 0 1.25rem;
+  font-size: 1.15rem;
+}
+
+h3 {
+  margin: 0 0 0.6rem;
+  font-size: 1.35rem;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+.intro {
+  max-width: 32rem;
+  margin: 1rem 0 0;
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+
+section + section {
+  margin-top: 3rem;
+}
+
+.project {
+  padding: 1.5rem;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+}
+
+.project .note {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.policy {
+  width: min(100% - 2.5rem, 48rem);
+  padding-top: 3rem;
+}
+
+.policy-header {
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.policy-header h1 {
+  font-size: clamp(2rem, 6vw, 3rem);
+  letter-spacing: -0.03em;
+}
+
+.policy-meta {
+  color: var(--muted);
+  margin-top: 1rem;
+}
+
+.policy section {
+  margin-top: 2.5rem;
+}
+
+.policy h2 {
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.policy p {
+  max-width: 44rem;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.site-footer {
+  width: min(100% - 2.5rem, 46rem);
+  margin: 0 auto;
+  padding: 1.5rem 0 3rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 40rem) {
+  .site-shell {
+    padding-top: 3rem;
+  }
+}
