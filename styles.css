@@ -107,6 +107,52 @@ section + section {
   font-size: 0.95rem;
 }
 
+.project-page .site-header {
+  margin-bottom: 2rem;
+}
+
+.project-page > .note {
+  max-width: 44rem;
+  color: var(--muted);
+}
+
+.version {
+  color: var(--muted);
+}
+
+.download-link {
+  display: inline-block;
+  margin: 0.25rem 0 1.5rem;
+  padding: 0.7rem 1.1rem;
+  border: 1px solid var(--link);
+  background: var(--link);
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.download-link:hover {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: #ffffff;
+}
+
+.release-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+}
+
+.project-page ul,
+.project-page ol {
+  margin: 0;
+  padding-left: 1.4rem;
+}
+
+.project-page li + li {
+  margin-top: 0.35rem;
+}
+
 .policy {
   width: min(100% - 2.5rem, 48rem);
   padding-top: 3rem;
